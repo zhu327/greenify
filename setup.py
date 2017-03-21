@@ -31,7 +31,7 @@ setup(
     url="https://github.com/douban/greenify",
     download_url = 'https://github.com/douban/greenify/archive/%s.tar.gz' % version,
     setup_requires=['Cython >= 0.18'],
-    install_requires=['gevent'],
+    # install_requires=['gevent'],
     ext_modules=[
         Extension('greenify', sources, include_dirs=include_dirs,
                   libraries=libraries)
